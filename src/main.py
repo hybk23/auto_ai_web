@@ -44,7 +44,7 @@ async def main():
                 chat_history,
             )
             print(f"\n模型返回的操作：{ans1}")
-            thought,task,place = extract_json_from_response(ans1)
+            #thought,task,place = extract_json_from_response(ans1)
             elements = get_related_elements(root_node)
             controller.update_dom_elements(elements)
             #input2= task+elements+请根据以上信息和页面执行操作，操作格式是
